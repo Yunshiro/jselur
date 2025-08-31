@@ -1,0 +1,13 @@
+{
+  "id": "account_rule001",
+  "description": "账户折扣规则",
+  "rules": [
+    {
+      "conditions": [
+        {"variable": "&accountType", "value": "VIP", "sign": "eq" ,"logic": "AND"},
+        {"variable": "&credits", "value": 5, "sign": "lt" ,"logic": ""}
+      ],
+      "logic": ""
+    }
+  ]
+}
