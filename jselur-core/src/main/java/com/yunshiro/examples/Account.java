@@ -3,7 +3,7 @@ package com.yunshiro.examples;
 public class Account {
     private String id;
     private String name;
-    private String type;
+    private String accountType;
     private int credits;
     private double discount;
 
@@ -11,10 +11,10 @@ public class Account {
     public Account() {
     }
 
-    public Account(String id, String name, String type, int credits, double discount) {
+    public Account(String id, String name, String accountType, int credits, double discount) {
         this.id = id;
         this.name = name;
-        this.type = type;
+        this.accountType = accountType;
         this.credits = credits;
         this.discount = discount;
     }
@@ -53,18 +53,18 @@ public class Account {
 
     /**
      * 获取
-     * @return type
+     * @return accountType
      */
-    public String getType() {
-        return type;
+    public String getaccountType() {
+        return accountType;
     }
 
     /**
      * 设置
-     * @param type
+     * @param accountType
      */
-    public void setType(String type) {
-        this.type = type;
+    public void setaccountType(String accountType) {
+        this.accountType = accountType;
     }
 
     /**
@@ -100,6 +100,6 @@ public class Account {
     }
 
     public String toString() {
-        return "Account{id = " + id + ", name = " + name + ", type = " + type + ", credits = " + credits + ", discount = " + discount + "}";
+        return "Account{id = " + id + ", name = " + name + ", accountType = " + accountType + ", credits = " + credits + ", discount = " + discount + "}";
     }
 }
